@@ -1,0 +1,28 @@
+print("Ten program pozwala wprowadzic dwa równania liniowe i oceni, czy są one rownolegle czy prostopadle.")
+print("Wprowadz wartosci pierwszego rownania: ")
+print("y=",end = " ")
+m1 = input()
+print("x+",end = " ")
+b1 = input()
+print("Wprowadz wartosci drugiego rownania: ")
+print("y=",end = " ")
+m2 = input()
+print("x+",end = " ")
+b2 = input()
+
+m1=float(m1)
+
+m2=float(m2)
+
+def perParall(p1,p2):
+    if p1 == p2:
+        print("Funkcje Liniowe sa rownolegle!")
+        return '||'
+    elif p1*p2 == -1:
+        print("Funkcje liniowe sa prostopadle!")
+        return '+'
+    else:
+        print("Funkkcje nie maja powiazania.")
+        return 0
+
+print(perParall(m1,m2))
