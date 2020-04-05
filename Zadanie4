@@ -1,0 +1,18 @@
+print("Program znajdzie monotonne funkcje liniowe w formacie: y = mx + b.")
+m = input("Podaj wartosc m: ")
+b = input("Podaj wartosc b: ")
+m = int(m)
+b = int(b)
+
+def FunkcjaMono(m):
+    if m > 0:
+        print("Funkcja jest rosnaca.")
+        return 1
+    elif m < 0:
+        print("Funkcja jest malejaca.")
+        return -1
+    else:
+        print("Funkcja jest stala.")
+        return 0
+
+print(FunkcjaMono(m))
